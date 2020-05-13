@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:title="@string/settings_title">
+
+    <EditTextPreference
+        android:defaultValue="@string/settings_start_date_default"
+        android:hint="yyyy-mm-dd"
+        android:inputType="date"
+        android:key="@string/start_date_key"
+        android:selectAllOnFocus="true"
+        android:title="@string/start_date_label" />
+
+    <ListPreference
+        android:defaultValue="@string/section_default"
+        android:entries="@array/section"
+        android:entryValues="@array/section_id"
+        android:key="football"
+        android:title="Section Type" />
+
+</PreferenceScreen>
